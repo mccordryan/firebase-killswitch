@@ -14,7 +14,17 @@ This extension acts as a safeguard against unexpected bills by removing your bil
    - Select the **Connect a Pub/Sub topic to this budget** checkbox at the bottom of the page and locate the Pub/Sub topic you created earlier (you may have to select your project again using the **Select Project** button)
    - Before saving, make note of your project name (this should be visible in the newly selected Pub/Sub Topic as projects/PROJECT_NAME/topics/TOPIC_NAME).
 
-3. Install this extension. When prompted for your Topic Name and Project Name, enter the values you made note of earlier. Be sure you are entering the proper values, otherwise this extension will not work. Once installed, follow the postinstall instructions (also listed below).
+# Install
+
+3. Install this extension.
+
+   - To install this extension, clone this repo locally.
+   - Navigate to the project you want to install the extension on.
+   - If you haven't already, run `firebase init` to initialize your extensions codebase.
+   - Run `firebase ext:install /path/to/your/clone/of/this/repo`
+     - When prompted for your Topic Name and Project Name, enter the values you made note of earlier. Be sure you are entering the proper values, otherwise this extension will not work.
+   - Once completed, deploy to your project by running `firebase deploy --only extensions`.
+   - Once deployment is complete, follow the postinstall instructions (listed below).
 
 # Post-Install
 
