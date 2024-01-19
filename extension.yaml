@@ -46,7 +46,7 @@ resources:
       eventTrigger:
         eventType: google.pubsub.topic.publish
         resource: projects/${PROJECT_ID}/topics/${TOPIC_NAME}
-      runtime: "nodejs16"
+      runtime: "nodejs18"
 
 apis:
   - apiName: cloudbilling.googleapis.com
